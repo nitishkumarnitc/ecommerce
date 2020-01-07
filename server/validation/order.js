@@ -1,6 +1,5 @@
 const Validator = require("validator");
 const isEmpty = require("is-empty");
-const keys=["itemId","quantity"];
 
 module.exports = function validateOrderInput(orders) {
   let errors={}

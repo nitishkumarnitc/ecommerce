@@ -1,9 +1,8 @@
 const Inventory=require('./../models/Inventory');
 const Order=require('./../models/Order');
-
-const log=require('./../logger');
 module.exports={
     order:(orders)=>{
+        //transaction unit , check inventory , update inventory and update orders
         return new Promise(async (resolve,reject)=>{
 
             const session = await Inventory.startSession();
