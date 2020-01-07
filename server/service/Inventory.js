@@ -2,6 +2,7 @@ const Inventory=require('./../models/Inventory');
 const log=require('./../logger');
 module.exports={
     getInventory:(itemIds)=>{
+        console.log("get inventory ",itemIds)
         return new Promise((resolve,reject)=>{
             let orQuery=[];
             itemIds.forEach(itemId=>{

@@ -29,3 +29,15 @@ npm start
 
 // Server runs on http://localhost:5000 
 ```
+
+## Apis 
+
+```javascript
+http://localhost:5000/api/order
+
+method : post
+
+data: {
+  orders:[[{"itemId":1,"quantity":2},{"itemId":2,"quantity":2}]]
+}
+```
